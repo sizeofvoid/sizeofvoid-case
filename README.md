@@ -1,12 +1,12 @@
-# Strange Case - Bootstrap Clone of Hyde for Hugo
+# sizeofvoid case - Bootstrap Clone of Hyde for Hugo
 
-Strange Case was built for people who like the original Jekyll theme [Hyde](https://github.com/poole/hyde) and its [port to Hugo](https://github.com/spf13/hyde) but prefer to use [Bootstrap](http://getbootstrap.com).
+sizeofvoid case was built for people who like the original Jekyll theme [Hyde](https://github.com/poole/hyde) and its [port to Hugo](https://github.com/spf13/hyde) but prefer to use [Bootstrap](http://getbootstrap.com).
 
 The theme was built from an empty Bootstrap 3 template with the goal of easy modification for end users. The code is as simple as possible - clearly formatted HTML and a single stylesheet. It's a two column responsive design and currently includes version 3.3.7 of Bootstrap.
 
 Pull requests are welcome.
 
-![Strange Case Screenshot](http://i.imgur.com/i7aarpG.png)
+![sizeofvoid case Screenshot](http://i.imgur.com/i7aarpG.png)
 
 
 ## Contents
@@ -24,14 +24,14 @@ Pull requests are welcome.
 
 ## Installation
 
-Installing **Strange Case** is easy. Simple clone this repo to `themes/` in your Hugo folder.
+Installing **sizeofvoid case** is easy. Simple clone this repo to `themes/` in your Hugo folder.
 
     ~$ cd your-hugo-folder/themes/
-    ~$ git clone https://github.com/ExchangeRate-API/strange-case.git
+    ~$ git clone https://github.com/sizeofvoid/sizeofvoid-case.git
 
-Next, open the `config.toml` file in the base of the Hugo folder and ensure the theme is set to `strange-case`.
+Next, open the `config.toml` file in the base of the Hugo folder and ensure the theme is set to `sizeofvoid-case`.
 
-    theme = "strange-case"
+    theme = "sizeofvoid-case"
 
 
 ## Customization
@@ -67,7 +67,7 @@ You can optionally use the `pre` and `post` vars to include HTML before or after
 
 In keeping with our attempt to replicate the original Hyde in Bootstrap we've included some colour scheme options. These are not the same as in the original, but we used palettes from the same [Base16](https://github.com/chriskempson/base16) project.
 
-![Strange Case in Light Brown](http://i.imgur.com/oLjV8LV.png)
+![sizeofvoid case in Light Brown](http://i.imgur.com/oLjV8LV.png)
 
 The themes are:
 
@@ -84,9 +84,9 @@ And then a bonus theme that isn't from Base16:
 Using a theme is as simple as changing the `colorScheme` param in your `config.toml`. Example:
 
 	baseurl = "/blog"
-	title = "Strange Case Hugo Theme"
+	title = "sizeofvoid case Hugo Theme"
 
-	theme = "strange-case"
+	theme = "sizeofvoid-case"
 
 	[params]
 		colorScheme = "scheme-darkbrown"
@@ -98,7 +98,7 @@ Using a theme is as simple as changing the `colorScheme` param in your `config.t
 
 #### Creating Your Own Color Scheme
 
-To create your own custom color scheme simply scroll to the end of the `strange-case.css` stylesheet in the `your-hugo-dir/themes/strange-case/static` folder and edit the template we've left there.
+To create your own custom color scheme simply scroll to the end of the `sizeofvoid-case.css` stylesheet in the `your-hugo-dir/themes/sizeofvoid-case/static` folder and edit the template we've left there.
 
 We'll happily accept pull requests for quality color schemes.
 
@@ -110,18 +110,18 @@ This theme supports Hugo's native GA integration & a Piwik integration.
 For Google Analytics, simply set your UA number in your `config.toml` file. Example:
 
 	baseurl = "/blog"
-	title = "Strange Case Hugo Theme"
+	title = "sizeofvoid case Hugo Theme"
 
-	theme = "strange-case"
+	theme = "sizeofvoid-case"
 
 	googleAnalytics = "UA-123-456"
 
 For Piwik, set the following two `params` as below:
 
 	baseurl = "/blog"
-	title = "Strange Case Hugo Theme"
+	title = "sizeofvoid case Hugo Theme"
 
-	theme = "strange-case"
+	theme = "sizeofvoid-case"
 
 	[params]
 		colorScheme = "scheme-darkbrown"
@@ -142,7 +142,7 @@ Here is a full example `config.toml`:
 
 	googleAnalytics = ""
 
-	theme = "strange-case"
+	theme = "sizeofvoid-case"
 
 	[params]
 		colorScheme = "scheme-darkbrown"
@@ -164,14 +164,7 @@ Here is a full example `config.toml`:
 		url = "http://getbootstrap.com"
 
 
-## Author
-
-**ExchangeRate-API.com**
-
-- <https://github.com/ExchangeRate-API/>
-- <https://www.exchangerate-api.com>
-
-#### Strange Case Uses Bootstrap
+#### sizeofvoid case Uses Bootstrap
 
 **Bootstrap**
 
@@ -180,15 +173,9 @@ Here is a full example `config.toml`:
 
 ## Inspired By
 
-**Mark Otto** - creator of the Hyde Jekyll theme
+**ExchangeRate-API.com** - the original hugo theme
 
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
-
-**Steve Francia** - porter of the original Hyde theme to Hugo
-
-- <https://github.com/spf13>
-- <https://twitter.com/spf13>
+- <https://github.com/ExchangeRate-API/strange-case>
 
 
 ## Licensing
