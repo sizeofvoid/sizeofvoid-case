@@ -25,6 +25,64 @@
 			</ul>
 		</div>
 
+		<div class="sidebar-icons">
+			{{ if .Site.Params.github }}
+			<a href="{{ .Site.Params.github }}" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.twitter }}
+			<a href="{{ .Site.Params.twitter }}" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.mastodon }}
+			<a href="{{ .Site.Params.mastodon }}" target="_blank" rel="noopener"><i class="fab fa-mastodon"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.facebook }}
+			<a href="{{ .Site.Params.facebook }}" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.googleplus }}
+			<a href="{{ .Site.Params.googleplus }}" target="_blank" rel="noopener"><i class="fab fa-google-plus-g"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.instagram }}
+			<a href="{{ .Site.Params.instagram }}" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.keybase }}
+			<a href="{{ .Site.Params.keybase }}" target="_blank" rel="noopener"><i class="fab fa-keybase"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.linkedin }}
+			<a href="{{ .Site.Params.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.xing }}
+			<a href="{{ .Site.Params.xing }}" target="_blank" rel="noopener"><i class="fab fa-xing"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.reddit }}
+			<a href="{{ .Site.Params.reddit }}" target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.skype }}
+			<a href="{{ .Site.Params.skype }}" target="_blank" rel="noopener"><i class="fab fa-skype"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.telegram }}
+			<a href="{{ .Site.Params.telegram }}" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.youtube }}
+			<a href="{{ .Site.Params.youtube }}" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+			{{ end }}
+
+			{{ if .Site.Params.px500 }}
+			<a href="{{ .Site.Params.px500 }}" target="_blank" rel="noopener"><i class="fab fa-500px"></i></a>
+			{{ end }}
+		</div>
+
 		<p class="copyright">{{ with .Site.Params.copyright }}{{ . }}{{ else }}&copy; {{ now.Format "2006" }}. All rights reserved. {{end}}</p>
 		<p class="attr">Powered by <a href="http://gohugo.io">Hugo</a> &amp; <a href="https://github.com/ExchangeRate-API/strange-case">Strange Case</a> (inspired by <a href="https://github.com/poole/hyde">Hyde</a>).</p>
 
