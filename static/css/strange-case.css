@@ -83,6 +83,48 @@ p {
 	width:85%;
 	margin:0 auto;
 }
+.sidebar .sidebar-icons {
+	padding-left: 0;
+	margin-left: 0;
+	margin-top: 1.5em;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	-ms-align-items: center;
+}
+
+.sidebar .sidebar-icons a {
+  margin-left: 6px;
+  margin-right: 6px;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -moz-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -ms-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  -o-transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+  transition: opacity 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+}
+.sidebar .sidebar-icons a:first-child {
+  margin-left: 0;
+}
+.sidebar .sidebar-icons a:last-child {
+  margin-right: 0;
+}
+.sidebar .sidebar-icons a:hover {
+  opacity: 0.8;
+}
+.sidebar .sidebar-icons a .icon {
+  width: 16px;
+  height: 16px;
+}
 .sidebar .sidebar-freetext {
 	margin-top: 1.5em;
 }
@@ -98,9 +140,7 @@ p {
 .sidebar .sidebar-recent {
 	margin-top: 1.5em;
 }
-.sidebar .sidebar-menus li a {
-	text-decoration:underline;
-}
+
 @media (min-width: 768px) {
 	.sidebar {
 		top: 0;
@@ -255,8 +295,8 @@ p.attr {
 
 /* Green Scheme */
 .scheme-green .sidebar {
-	background-color: #a3be8c;
-	color: #4f5b66;
+	background-color: #636b46;
+	color: #2b303b;
 }
 .scheme-green .sidebar h1 {
 	color: #2b303b;
@@ -287,4 +327,5 @@ p.attr {
 }
 .scheme-slate .post .post-heading span {
 	color: #9a9a9a;
+}
 }
