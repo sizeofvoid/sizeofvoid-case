@@ -19,7 +19,7 @@
 		<div class="sidebar-recent hidden-xs">
 			<p>Recent Posts:</p>
 			<ul>
-				{{ range first 5 .Site.Pages }}
+				{{ range where .Site.RegularPages "Type" "posts"  }}
 				<li><a href="{{.Permalink}}">{{ .Title }}</a></li>
 				{{ end }}
 			</ul>
