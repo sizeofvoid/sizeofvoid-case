@@ -15,7 +15,6 @@
 	<link href="{{ .Site.BaseURL }}/3rdparty/font-awesome/web-fonts-with-css/css/fa-brands.css" rel="stylesheet">
 	<link href="{{ .Site.BaseURL }}/3rdparty/font-awesome/web-fonts-with-css/css/fontawesome.css" rel="stylesheet">
 
-
 	<!--<style type="text/css" media="all">
 		# Optional: comment out strange-case.css above, minify it with YUICompressor and paste inline styles here to lose a request...
 	</style>-->
@@ -29,5 +28,14 @@
 	{{ range .AlternativeOutputFormats -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}>>
 	{{ end -}}
+
+	<!-- Load PhotoSwipe js if the load-photoswipe shortcode has been used -->
+	{{ if ($.Scratch.Get "photoswipeloaded") }}
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="/js/load-photoswipe.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+	{{ end }}
+
 </head>
 <body class="{{ .Site.Params.colorScheme }}">
