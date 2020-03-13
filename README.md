@@ -17,7 +17,8 @@ Pull requests are welcome.
   - [Color Schemes](#color-schemes)
   - [Analytics](#analytics)
   - [Example Config](#example-config)
-- [Author](#author)
+- [Support/Improvements](#support)
+  - [hugo-easy-gallery](#support-easyg)
 - [Inspired By](#inspired-by)
 - [License](#license)
 
@@ -65,7 +66,9 @@ You can optionally use the `pre` and `post` vars to include HTML before or after
 
 ### Color Schemes
 
-In keeping with our attempt to replicate the original Hyde in Bootstrap we've included some colour scheme options. These are not the same as in the original, but we used palettes from the same [Base16](https://github.com/chriskempson/base16) project.
+In keeping with our attempt to replicate the original Hyde in Bootstrap we've
+included some colour scheme options. These are not the same as in the original,
+but we used palettes from the same [Base16](https://github.com/chriskempson/base16) project.
 
 ![sizeofvoid case in Light Brown](http://i.imgur.com/oLjV8LV.png)
 
@@ -163,6 +166,12 @@ Here is a full example `config.toml`:
 		post = "<span class='glyphicon glyphicon-ok'></span>"
 		url = "http://getbootstrap.com"
 
+
+## Support/Improvements
+
+### hugo-easy-gallery
+
+sizeofvoid-case comes with [hugo-easy-gallery](https://github.com/liwenyip/hugo-easy-gallery) support by default.
 
 #### sizeofvoid case Uses Bootstrap
 

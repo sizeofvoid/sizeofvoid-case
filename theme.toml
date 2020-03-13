@@ -8,7 +8,7 @@ description = "A 2 column blog theme for Hugo using Bootstrap - inspired by the 
 homepage = "https://github.com/ExchangeRate-API/sizeofvoid-case"
 tags = ["", ""]
 features = ["", ""]
-min_version = 0.15
+min_version = 0.16
 
 [author]
 	name = "Rafael Sadowski <rafael@sizeofvoid.org>"
